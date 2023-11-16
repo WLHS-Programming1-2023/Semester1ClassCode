@@ -6,7 +6,7 @@ animal_type = "cat"
 print(f"{cat_name} is a {cat_age} year old {animal_type}")
 
 
-# String functions (upper, lower, strip, capitalize )
+# String functions (upper, lower, strip, capitalize, isdigit, islower,isupper, in )
 
 print("Winston".upper())
 
@@ -20,6 +20,13 @@ print(cat_name.capitalize())
 
 cat_name2 = "        Winston                           " 
 print(cat_name2.strip())
+
+cat_age = "5"
+print(cat_age.isdigit())
+print(cat_name[0].isupper())
+print(cat_name[0].islower())
+
+print("ston" in cat_name2)
 
 # Accessing single characters within a string
 ###  M   i   L   L   i   e  ####
@@ -75,6 +82,9 @@ print(my_string[0:20:2])
 print(my_string[::2])
 
 
+#negative indices
+print(my_string[-4:])
+print(my_string[::-4]) #takes every 4 character in reverse starting at and including thje last char
 #reverse string
 print(my_string[::-1])
 
