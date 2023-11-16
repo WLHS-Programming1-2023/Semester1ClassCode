@@ -1,9 +1,9 @@
 # f strings in Python
 
-variable_1 = "Boss"
-variable_2 = 5
-variable_3 = "cat"
-print(f"{variable_1} is a {variable_2} year old {variable_3}")
+cat_name = "Boss"
+cat_age = 5
+animal_type = "cat"
+print(f"{cat_name} is a {cat_age} year old {animal_type}")
 
 
 # String functions (upper, lower, strip, capitalize )
@@ -22,9 +22,9 @@ cat_name2 = "        Winston                           "
 print(cat_name2.strip())
 
 # Accessing single characters within a string
-### M  i  L  L  i  e  ####
-### 0  1  2  3  4  5  ####
-### -6 -5 -4 -3 -2 -1 #### 
+###  M   i   L   L   i   e  ####
+###  0   1   2   3   4   5  ####
+### -6  -5  -4  -3  -2  -1 #### 
 
 print(cat_name[2])
 print(cat_name[-1])
@@ -73,7 +73,8 @@ print(my_string[:])
 print(my_string[0:12:2])
 print(my_string[0:20:2])
 print(my_string[::2])
-#backward string
 
+
+#reverse string
 print(my_string[::-1])
 
