@@ -59,45 +59,37 @@ string_one = "This is a string"
 
 # string[start:stop], string[start:], string[:stop]
 
-# my_substring = string_one[:8]
-# print(my_substring)
-# my_substring = string_one[8:]
-# print(my_substring)
-# my_substring = string_one[4:12]
+# print(string_one[0:4]) # prints "This"
+# print(string_one[10:1000000]) # prints "string"
+# print(string_one[10:]) # prints "string"
+# print(string_one[:9]) # prints "This is a"
 
 
 
 
 
-### T  h  i  s   i  s   a   s  t  r  i  n  g ###
-### 0  1  2  3 4 5  6 7 8 9 10 11 12 13 14 15
+### T   h   i     s     i  s   a   s  t  r  i  n   g  ###
+### 0   1   2     3   4 5  6 7 8 9 10 11 12 13 14 15
+### -16 -15 -14  -13                               -1 ###
 
 # string[:], string[start:stop:step], string[::step]
-my_substring = string_one[:]
-print(my_substring)
-my_substring = string_one[1:10:2]
-print(my_substring)
-my_substring = string_one[::4]
-print(my_substring)
-my_substring = string_one[1::3]
-print(my_substring)
-my_substring = string_one[:14:2]
-print(my_substring)
-#negative indices
-my_substring = string_one[-1:-6:-2]
-print(my_substring)
 
+# print(string_one[:])
+# print(string_one[0:16:3])
+# print(string_one[5:9:2])
+# print(string_one[::3])
+#negative indices
+print(string_one[-7:])
+print(string_one[-16:-5:2])
 #reverse string
-my_substring = string_one[::-1]
-print(my_substring)
+print(string_one[::-1])
+
 #rearranging strings with slicing
 not_yoda_sentence = "I will take you to him"
 #yoda_sentence should be Take you to him, I will
 
+first_part = not_yoda_sentence[7:].capitalize()
+second_part = not_yoda_sentence[:6]
+print(f"{first_part}, {second_part}")
 #### I   w i l l   t a k e     y  o  u     t  o      h  i  m ####
 #    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  19 20 21
-
-first_part = not_yoda_sentence[7:].capitalize()
-second_part = not_yoda_sentence[0:6]
-yoda_sentence = f"{first_part}, {second_part}"
-print(yoda_sentence)
