@@ -26,8 +26,11 @@
 
 
 
-# main method - all function call go in here
+# main method - all function calls go in here
 def main():
+    # the original data should not be altered. If you store your data as user_nums for example
+    # I should be able to print user_nums at the end and see the original data in its original
+    # order
 
     print("Hi") #you can erase this
 
